@@ -5,7 +5,7 @@
     top: 0px;
   }
   header nav {
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem;
   }
   header nav div.nav-brand {
     width: 20%;
@@ -36,5 +36,9 @@
     font-family: "Bebas Neue";
     margin: 0rem 1rem;
     font-size: 1.15rem;
+  }
+  header nav li:hover {
+    color: var(--spanish-orange);
+    border-bottom: 2px solid var(--spanish-orange);
   }
 }/*# sourceMappingURL=header.css.map */

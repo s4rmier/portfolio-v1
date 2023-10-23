@@ -45,7 +45,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  transition: all 200ms;
+  transition: all 100ms;
 }
 
 html {
