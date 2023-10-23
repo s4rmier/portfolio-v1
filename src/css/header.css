@@ -1,0 +1,40 @@
+@media screen and (min-width: 960px) {
+  header {
+    background-color: var(--champagne-pink50);
+    position: sticky;
+    top: 0px;
+  }
+  header nav {
+    padding: 1rem 0rem;
+  }
+  header nav div.nav-brand {
+    width: 20%;
+  }
+  header nav div.nav-brand img {
+    width: 30px;
+  }
+  header nav div.nav-brand h2 {
+    font-family: "Bebas Neue";
+    margin-left: 1rem;
+    letter-spacing: 0.05rem;
+  }
+  header nav div.nav-brand h2 span {
+    color: #c44536;
+  }
+  header nav ul.nav-link {
+    width: 60%;
+  }
+  header nav ul.nav-link li {
+    font-family: "Bebas Neue";
+    margin: 0rem 1rem;
+    font-size: 1.15rem;
+  }
+  header nav ul.nav-socials {
+    width: 20%;
+  }
+  header nav ul.nav-socials li {
+    font-family: "Bebas Neue";
+    margin: 0rem 1rem;
+    font-size: 1.15rem;
+  }
+}/*# sourceMappingURL=header.css.map */

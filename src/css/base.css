@@ -1,0 +1,59 @@
+/* CSS Variables */
+:root {
+  --dark-slate-gray: #283d3bff;
+  --caribbean-current: #197278ff;
+  --champagne-pink: #edddd4;
+  --champagne-pink50: #edddd450;
+  --persian-red: #c44536ff;
+  --tropical-indigo: #9395d3ff;
+  --air-force-blue: #6689a1ff;
+  --jet: #353238ff;
+  --magnolia: #f8f1ffff;
+  --jasmine: #f4d06fff;
+  --spanish-orange: #e36414ff;
+}
+
+/* Utility Classes */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.align {
+  align-items: center;
+}
+
+.justify {
+  justify-content: center;
+}
+
+/* Universal Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 200ms;
+}
+
+html {
+  font-size: 16px;
+  color: var(--jet);
+}
+
+/* Text Styles */
+a {
+  color: inherit;
+}/*# sourceMappingURL=base.css.map */
