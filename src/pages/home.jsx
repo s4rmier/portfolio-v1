@@ -1,7 +1,9 @@
+import "../css/home.css";
+
 export default function Home() {
   return (
     <div id="home_page">
-      <h1></h1>
+      <section className="hero container flex-row align justify"></section>
     </div>
   );
 }

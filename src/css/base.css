@@ -11,6 +11,8 @@
   --magnolia: #f8f1ffff;
   --jasmine: #f4d06fff;
   --spanish-orange: #e36414ff;
+  --eggshell: #f1e9da;
+  scroll-behavior: smooth;
 }
 
 /* Utility Classes */
@@ -22,12 +24,6 @@
 .flex-row {
   display: flex;
   flex-direction: row;
-}
-
-.container {
-  width: 90%;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .align {
@@ -45,15 +41,23 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  transition: all 100ms;
 }
 
 html {
   font-size: 16px;
-  color: var(--jet);
+  background-color: var(--dark-slate-gray);
+  color: var(--eggshell);
 }
 
 /* Text Styles */
 a {
   color: inherit;
+}
+
+@media screen and (min-width: 1008px) {
+  .container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=base.css.map */

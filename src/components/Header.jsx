@@ -1,13 +1,20 @@
 import "../css/header.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Header() {
+  const [activeNav, setActiveNav] = useState("home");
+
+  function assignActiveClass(navItem) {
+    setActiveNav(navItem);
+  }
+
   return (
     <header>
       <nav className="container flex-row align">
         <Link to="/">
-          <div className="nav-brand flex-row align">
-            <img src="/logo.svg" alt="" />
+          <div className="nav-brand flex-row align justify">
+            <img src="/logo-light.svg" alt="" />
             <h2 className="brand-name">
               ROMNICK<span>.DEV</span>
             </h2>
@@ -15,19 +22,44 @@ export default function Header() {
         </Link>
         <ul className="nav-link flex-row align justify">
           <Link to="/">
-            <li>Home</li>
+            <li
+              onClick={() => assignActiveClass("home")}
+              className={activeNav === "home" && "active-nav"}
+            >
+              Home
+            </li>
           </Link>
           <Link to="/about">
-            <li>About</li>
+            <li
+              onClick={() => assignActiveClass("about")}
+              className={activeNav === "about" && "active-nav"}
+            >
+              About
+            </li>
           </Link>
           <Link to="/projects">
-            <li>Projects</li>
+            <li
+              onClick={() => assignActiveClass("projects")}
+              className={activeNav === "projects" && "active-nav"}
+            >
+              Projects
+            </li>
           </Link>
           <Link to="/blog">
-            <li>Blog</li>
+            <li
+              onClick={() => assignActiveClass("blog")}
+              className={activeNav === "blog" && "active-nav"}
+            >
+              Blog
+            </li>
           </Link>
           <Link to="/contact">
-            <li>Contact</li>
+            <li
+              onClick={() => assignActiveClass("contact")}
+              className={activeNav === "contact" && "active-nav"}
+            >
+              Contact
+            </li>
           </Link>
         </ul>
         <ul className="nav-socials flex-row justify align">
