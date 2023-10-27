@@ -1,6 +1,7 @@
 /* CSS Variables */
 :root {
   --dark-slate-gray: #283d3bff;
+  --dark-slate-gray200: #1c2827;
   --caribbean-current: #197278ff;
   --champagne-pink: #edddd4;
   --champagne-pink50: #edddd450;
@@ -12,6 +13,8 @@
   --jasmine: #f4d06fff;
   --spanish-orange: #e36414ff;
   --eggshell: #f1e9da;
+  --folly: #ff1053;
+  --paper: #f7f7f7;
   scroll-behavior: smooth;
 }
 
@@ -45,7 +48,7 @@
 
 html {
   font-size: 16px;
-  background-color: var(--dark-slate-gray);
+  background-color: var(--dark-slate-gray200);
   color: var(--eggshell);
 }
 
@@ -55,9 +58,22 @@ a {
 }
 
 @media screen and (min-width: 1008px) {
+  html {
+    font-size: 16px;
+  }
   .container {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1007px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=base.css.map */

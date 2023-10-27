@@ -1,9 +1,10 @@
 import "../css/header.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function Header() {
-  const [activeNav, setActiveNav] = useState("home");
+  const [activeNav, setActiveNav] = useState("Home");
 
   function assignActiveClass(navItem) {
     setActiveNav(navItem);
@@ -13,7 +14,10 @@ export default function Header() {
     <header>
       <nav className="container flex-row align">
         <Link to="/">
-          <div className="nav-brand flex-row align justify">
+          <div
+            onClick={() => assignActiveClass("home")}
+            className="nav-brand flex-row align justify"
+          >
             <img src="/logo-light.svg" alt="" />
             <h2 className="brand-name">
               ROMNICK<span>.DEV</span>
@@ -82,6 +86,7 @@ export default function Header() {
             </a>
           </li>
         </ul>
+        <HamburgerMenu />
       </nav>
     </header>
   );
