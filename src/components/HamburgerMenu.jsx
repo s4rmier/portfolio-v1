@@ -1,10 +1,11 @@
 import "../css/header.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import NavLink from "./NavLink";
 
 export default function HamburgerMenu() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeMobileNav, setActiveMobileNav] = useState("Home");
+  const [activeMobileNav, setActiveMobileNav] = useState("home");
 
   function clickHandler(navItem) {
     setIsVisible(!isVisible);
@@ -43,46 +44,36 @@ export default function HamburgerMenu() {
           </div>
 
           <ul className="mobile-nav-links">
-            <Link to="/">
-              <li
-                onClick={() => clickHandler("Home")}
-                className={activeMobileNav === "Home" && "active-nav"}
-              >
-                Home
-              </li>
-            </Link>
-            <Link to="/about">
-              <li
-                onClick={() => clickHandler("About")}
-                className={activeMobileNav === "About" && "active-nav"}
-              >
-                About
-              </li>
-            </Link>
-            <Link to="/projects">
-              <li
-                onClick={() => clickHandler("Projects")}
-                className={activeMobileNav === "Projects" && "active-nav"}
-              >
-                Projects
-              </li>
-            </Link>
-            <Link to="/blog">
-              <li
-                onClick={() => clickHandler("Blog")}
-                className={activeMobileNav === "Blog" && "active-nav"}
-              >
-                Blog
-              </li>
-            </Link>
-            <Link to="/contact">
-              <li
-                onClick={() => clickHandler("Contact")}
-                className={activeMobileNav === "Contact" && "active-nav"}
-              >
-                Contact
-              </li>
-            </Link>
+            <NavLink
+              url="/"
+              label="home"
+              isActive={activeMobileNav === "home"}
+              clickHandler={() => clickHandler("home")}
+            />
+            <NavLink
+              url="/about"
+              label="about"
+              isActive={activeMobileNav === "about"}
+              clickHandler={() => clickHandler("about")}
+            />
+            <NavLink
+              url="/projects"
+              label="projects"
+              isActive={activeMobileNav === "projects"}
+              clickHandler={() => clickHandler("projects")}
+            />
+            <NavLink
+              url="/blog"
+              label="blog"
+              isActive={activeMobileNav === "blog"}
+              clickHandler={() => clickHandler("blog")}
+            />
+            <NavLink
+              url="/contact"
+              label="contact"
+              isActive={activeMobileNav === "contact"}
+              clickHandler={() => clickHandler("contact")}
+            />
           </ul>
         </div>
       )}

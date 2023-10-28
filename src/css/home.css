@@ -34,9 +34,9 @@ span.color {
   }
   div#home-page section.hero div.headline p {
     margin-top: 2rem;
-    font-family: "Crimson Text";
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-family: "Barlow Condensed";
+    font-size: 1.5rem;
+    font-weight: 200;
     margin-right: 2rem;
   }
   div#home-page section.about {
@@ -86,9 +86,9 @@ span.color {
   }
   div#home-page section.hero div.headline p {
     margin-top: 2rem;
-    font-family: "Crimson Text";
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-family: "Barlow Condensed";
+    font-size: 2rem;
+    font-weight: 200;
   }
   div#home-page section.about {
     height: 70vh;

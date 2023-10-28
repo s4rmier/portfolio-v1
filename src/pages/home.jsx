@@ -11,9 +11,9 @@ export default function Home() {
             <span className="color">Developer</span>
           </h1>
           <p>
-            I prioritize writing clean, reusable, semantically sound code, along
-            with creating a hand-crafted interface that follows good UI & UX
-            design principles.
+            I'm committed to writing clean, reusable, semantically sound code,
+            along with creating a hand-crafted interface that follows good UI &
+            UX design principles.
           </p>
         </div>
         <img src="/hero-bg.png" alt="" />

@@ -2,9 +2,10 @@ import "../css/header.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import NavLink from "./NavLink";
 
 export default function Header() {
-  const [activeNav, setActiveNav] = useState("Home");
+  const [activeNav, setActiveNav] = useState("home");
 
   function assignActiveClass(navItem) {
     setActiveNav(navItem);
@@ -25,46 +26,36 @@ export default function Header() {
           </div>
         </Link>
         <ul className="nav-link flex-row align justify">
-          <Link to="/">
-            <li
-              onClick={() => assignActiveClass("home")}
-              className={activeNav === "home" && "active-nav"}
-            >
-              Home
-            </li>
-          </Link>
-          <Link to="/about">
-            <li
-              onClick={() => assignActiveClass("about")}
-              className={activeNav === "about" && "active-nav"}
-            >
-              About
-            </li>
-          </Link>
-          <Link to="/projects">
-            <li
-              onClick={() => assignActiveClass("projects")}
-              className={activeNav === "projects" && "active-nav"}
-            >
-              Projects
-            </li>
-          </Link>
-          <Link to="/blog">
-            <li
-              onClick={() => assignActiveClass("blog")}
-              className={activeNav === "blog" && "active-nav"}
-            >
-              Blog
-            </li>
-          </Link>
-          <Link to="/contact">
-            <li
-              onClick={() => assignActiveClass("contact")}
-              className={activeNav === "contact" && "active-nav"}
-            >
-              Contact
-            </li>
-          </Link>
+          <NavLink
+            url="/"
+            label="Home"
+            isActive={activeNav === "home"}
+            clickHandler={() => assignActiveClass("home")}
+          />
+          <NavLink
+            url="/about"
+            label="About"
+            isActive={activeNav === "about"}
+            clickHandler={() => assignActiveClass("about")}
+          />
+          <NavLink
+            url="/projects"
+            label="projects"
+            isActive={activeNav === "projects"}
+            clickHandler={() => assignActiveClass("projects")}
+          />
+          <NavLink
+            url="/blog"
+            label="blog"
+            isActive={activeNav === "blog"}
+            clickHandler={() => assignActiveClass("blog")}
+          />
+          <NavLink
+            url="/contact"
+            label="contact"
+            isActive={activeNav === "contact"}
+            clickHandler={() => assignActiveClass("contact")}
+          />
         </ul>
         <ul className="nav-socials flex-row justify align">
           <li>

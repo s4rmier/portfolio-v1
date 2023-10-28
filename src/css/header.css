@@ -30,8 +30,8 @@
   }
   header nav ul.nav-link li {
     font-family: "Bebas Neue";
-    margin: 0rem 1rem;
-    font-size: 1rem;
+    margin: 0rem 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: 0.05rem;
     cursor: pointer;
     transition: all 600ms ease-in-out;
