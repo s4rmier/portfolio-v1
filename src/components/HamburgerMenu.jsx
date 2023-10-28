@@ -23,18 +23,6 @@ export default function HamburgerMenu() {
       {isVisible && (
         <div className="mobile-nav flex-col">
           <div className="mobile-header flex-row align">
-            {" "}
-            <Link to="/">
-              <div
-                onClick={() => clickHandler()}
-                className="nav-brand flex-row align justify"
-              >
-                <img src="/logo-light.svg" alt="" />
-                <h2 className="brand-name">
-                  ROMNICK<span>.DEV</span>
-                </h2>
-              </div>
-            </Link>
             <img
               onClick={() => setIsVisible(false)}
               className="close-btn"

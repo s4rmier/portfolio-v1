@@ -2,6 +2,21 @@ span.color {
   color: var(--folly);
 }
 
+figure.skill {
+  width: 4rem;
+}
+figure.skill img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0.5rem;
+}
+figure.skill figcaption h3 {
+  font-family: "Barlow";
+  color: var(--dark-slate-gray200);
+  font-size: 1.15rem;
+}
+
 @media screen and (min-width: 1008px) {
   div#home-page {
     background-image: url(../../public/home-bg.jpg);
@@ -40,7 +55,6 @@ span.color {
     margin-right: 2rem;
   }
   div#home-page section.about {
-    height: 70vh;
     padding: 2rem 0rem;
     background-image: url(../../public/paperbg.svg);
     background-repeat: no-repeat;
@@ -53,6 +67,28 @@ span.color {
     font-family: "Bebas Neue";
     color: var(--dark-slate-gray200);
     font-size: 2rem;
+    padding-left: 1.25rem;
+    border-left: 0.5rem solid var(--folly);
+  }
+  div#home-page section.about div.container div.stack-container {
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: flex-end;
+    margin: 4rem 0rem;
+  }
+  div#home-page section.about div.container div.stack-container figure.skill {
+    width: 3rem;
+  }
+  div#home-page section.about div.container div.stack-container figure.skill figcaption h3 {
+    font-size: 1.15rem;
+  }
+  div#home-page section.about div.container p {
+    font-family: "Barlow";
+    color: var(--dark-slate-gray200);
+    font-weight: 600;
+  }
+  div#home-page section.about div.container p i {
+    margin: 0px 6px;
   }
 }
 @media screen and (max-width: 1007px) {
@@ -91,19 +127,27 @@ span.color {
     font-weight: 200;
   }
   div#home-page section.about {
-    height: 70vh;
     padding-top: 2rem;
     background-image: url(../../public/paperbg.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   div#home-page section.about div.container {
-    margin-top: 6rem;
+    margin-top: 9rem;
+    padding-bottom: 6rem;
+    align-items: center;
   }
   div#home-page section.about div.container h2 {
     font-family: "Bebas Neue";
     color: var(--dark-slate-gray200);
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-left: 1.25rem;
+    border-left: 0.5rem solid var(--folly);
+  }
+  div#home-page section.about div.container div.stack-container {
+    margin: 2rem;
+    flex-wrap: wrap;
+    gap: 4rem;
   }
 }
 @media screen and (max-width: 640px) {
