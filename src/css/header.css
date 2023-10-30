@@ -9,7 +9,7 @@
     width: 100%;
     top: 0px;
     background-color: var(--dark-slate-gray200);
-    z-index: 9;
+    z-index: 99;
   }
   header nav {
     padding: 0.5rem 0rem;
@@ -58,6 +58,7 @@
     width: 100%;
     top: 0px;
     background-color: var(--dark-slate-gray200);
+    z-index: 99;
   }
   header nav {
     justify-content: space-between;
@@ -118,6 +119,7 @@
     width: 100%;
     top: 0px;
     background-color: var(--dark-slate-gray200);
+    z-index: 99;
   }
   header nav {
     padding: 2rem;

@@ -171,6 +171,72 @@ div#home-page h2 {
     margin-right: 2rem;
     justify-content: flex-end;
   }
+  div#home-page section.blog {
+    padding: 2rem 0rem;
+    height: 80vh;
+  }
+  div#home-page section.blog div.container div.blog-container {
+    margin-top: 4rem;
+    padding: 0rem 2rem;
+  }
+  div#home-page section.blog div.container div.blog-container figure {
+    width: 45vw;
+  }
+  div#home-page section.blog div.container div.blog-container figure img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  div#home-page section.blog div.container div.blog-container figure figcaption h3 {
+    font-family: "Bebas Neue";
+    color: var(--eggshell);
+    padding-left: 1rem;
+    border-left: 0.4rem solid var(--folly);
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+  }
+  div#home-page section.blog div.container div.blog-container figure figcaption p.author {
+    font-family: "Barlow Condensed";
+    opacity: 0.35;
+    margin-bottom: 1rem;
+    padding-left: 1.3rem;
+    font-weight: 400;
+    font-size: 0.85rem;
+  }
+  div#home-page section.blog div.container div.blog-container figure figcaption p.author span {
+    font-weight: 100;
+  }
+  div#home-page section.blog div.container div.blog-container figure figcaption h4 {
+    font-family: "Barlow";
+    font-weight: 400;
+    padding-left: 1.3rem;
+  }
+  div#home-page section.blog div.container div.blog-container figure figcaption button.button {
+    margin: 2rem;
+    align-self: flex-end;
+  }
+  div#home-page section.blog div.container div.blog-container div.other-posts figure {
+    margin: 0rem 0rem 2rem 3rem;
+    width: 30vw;
+  }
+  div#home-page section.blog div.container div.blog-container div.other-posts figure img {
+    width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  div#home-page section.blog div.container div.blog-container div.other-posts figure figcaption {
+    width: 70%;
+    min-height: 120px;
+    margin-left: 1rem;
+  }
+  div#home-page section.blog div.container div.blog-container div.other-posts figure figcaption h3 {
+    margin: 0rem;
+  }
+  div#home-page section.blog div.container div.blog-container div.other-posts figure figcaption h3:hover {
+    text-decoration: underline;
+  }
 }
 @media screen and (max-width: 1007px) {
   div#home-page {
@@ -305,7 +371,7 @@ div#home-page h2 {
     margin: 1rem 0rem;
   }
   div#home-page section.projects {
-    margin: 4rem 0rem 2rem;
+    margin: 2rem 0rem 2rem;
     padding: 4rem 2rem;
     background-color: var(--dark-slate-gray200);
   }

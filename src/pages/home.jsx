@@ -1,5 +1,6 @@
 import Skill from "../components/Skill";
 import "../css/home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -155,9 +156,10 @@ export default function Home() {
               <figcaption>
                 <h3>Urban Bikes Co</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  iure. Assumenda reiciendis laudantium sint laboriosam tempora.
-                  Deserunt corporis quis vel.
+                  A Cutting-Edge Single-Page React Application powered by Python
+                  API integration with MongoDB for seamless data delivery.
+                  Please note that, as the API is not hosted, certain features
+                  may experience limitations.
                 </p>
                 <ul className="skillset flex-row">
                   <li>React</li>
@@ -191,9 +193,10 @@ export default function Home() {
               <figcaption>
                 <h3>Petzzarria</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  iure. Assumenda reiciendis laudantium sint laboriosam tempora.
-                  Deserunt corporis quis vel.
+                  Petzzarria is a simple, straightforward HTML, CSS and JS
+                  project focused on utilizing the local storage to save,
+                  retrieve, and render data to support certain front-end
+                  functionalities.
                 </p>
                 <ul className="skillset flex-row">
                   <li>HTML</li>
@@ -221,13 +224,13 @@ export default function Home() {
               </figcaption>
             </figure>
             <figure className="project-item flex-row">
-              <img src="/urbanbikes.png" alt="" />
+              <img src="/portfolio.png" alt="" />
               <figcaption>
                 <h3>Romnick.dev</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  iure. Assumenda reiciendis laudantium sint laboriosam tempora.
-                  Deserunt corporis quis vel.
+                  This is a portfolio project developed in React not only to
+                  showcase my skills and projects but also to serve as a
+                  platform for my online presence.{" "}
                 </p>
                 <ul className="skillset flex-row">
                   <li>React</li>
@@ -254,6 +257,82 @@ export default function Home() {
                 </div>
               </figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <section className="blog">
+        <div className="container">
+          <h2>My Corner of the Web</h2>
+          <div className="blog-container flex-row justify">
+            <figure className="flex-col featured-post">
+              <img src="/application.png" alt="" />
+              <figcaption className="flex-col">
+                <h3>
+                  Is It Too Late to Become a Junior Web Developer in 2023?
+                  (Spoiler: No!)
+                </h3>
+                <p className="author">
+                  by <span>Romnick Sarmiento</span> on Oct 30
+                </p>
+                <h4>
+                  Web development is a rapidly growing field, and the demand for
+                  junior web developers is high. But with so many people vying
+                  for these jobs, it's natural to wonder if it's too late to get
+                  started in 2023.
+                </h4>
+                <button className="button">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Read
+                  More
+                </button>
+              </figcaption>
+            </figure>
+            <div className="other-posts flex-col">
+              <figure className="flex-row">
+                <img src="/ux.webp" alt="" />
+                <figcaption>
+                  <Link>
+                    <h3>
+                      Revolutionizing the User Experience: The Power of Modern
+                      Web Development Trends
+                    </h3>
+                  </Link>
+                </figcaption>
+              </figure>
+              <figure className="flex-row">
+                <img src="/mobile.webp" alt="" />
+                <figcaption>
+                  <Link>
+                    <h3>
+                      The Impact of Mobile-First Web Design and Its Role in
+                      Crafting Exceptional User Experiences
+                    </h3>
+                  </Link>
+                </figcaption>
+              </figure>
+              <figure className="flex-row">
+                <img src="/serverless.avif" alt="" />
+                <figcaption>
+                  <Link>
+                    <h3>
+                      The Magic of Serverless Architecture: Crafting Scalable
+                      and Cost-Efficient Web Solutions
+                    </h3>
+                  </Link>
+                </figcaption>
+              </figure>
+              <figure className="flex-row">
+                <img src="/seo.jpeg" alt="" />
+                <figcaption>
+                  <Link>
+                    <h3>
+                      The Power of SEO-Driven Web Development: Boosting Internet
+                      Visibility and Engagement
+                    </h3>
+                  </Link>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
