@@ -240,17 +240,14 @@ export default function Home() {
                 <div className="button-set flex-row">
                   <button className="button">
                     <a
-                      href="https://github.com/s4rmier/fsdi-107-110-bike-shop"
+                      href="https://github.com/s4rmier/react-portfolio-v1"
                       target="_blank"
                     >
                       <i class="fa-brands fa-github"></i>Github Repo
                     </a>
                   </button>
                   <button className="button">
-                    <a
-                      href="https://fsdi-107-110-bike-shop.netlify.app"
-                      target="_blank"
-                    >
+                    <a href="https://romnick.dev/" target="_blank">
                       <i class="fa-solid fa-globe"></i>Live Demo
                     </a>
                   </button>
