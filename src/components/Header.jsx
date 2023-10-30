@@ -34,7 +34,7 @@ export default function Header() {
           />
           <NavLink
             url="/about"
-            label="About"
+            label="about"
             isActive={activeNav === "about"}
             clickHandler={() => assignActiveClass("about")}
           />

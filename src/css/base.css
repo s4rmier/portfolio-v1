@@ -57,6 +57,59 @@ a {
   color: inherit;
 }
 
+span.color {
+  color: var(--folly);
+}
+
+figure.skill {
+  width: 4rem;
+}
+figure.skill img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0.5rem;
+}
+figure.skill figcaption h3 {
+  font-family: "Barlow";
+  color: var(--dark-slate-gray200);
+  font-size: 1.15rem;
+}
+
+ul.skillset {
+  font-family: "Barlow";
+  flex-wrap: wrap;
+}
+ul.skillset li {
+  flex-wrap: wrap;
+  margin: 0.15rem;
+  padding: 0.35rem;
+  border-radius: 5px;
+  background-color: var(--eggshell);
+  color: var(--jet);
+  font-weight: 500;
+  text-wrap: nowrap;
+  font-size: 0.85rem;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+button.button {
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0rem 0.25rem;
+  border-radius: 5px;
+  padding: 0.35rem 0.85rem;
+  font-size: 1.15rem;
+  font-family: "Bebas Neue";
+  text-wrap: nowrap;
+  background-color: var(--eggshell);
+  border: none;
+}
+button.button i {
+  margin-right: 0.5rem;
+}
+
 @media screen and (min-width: 1008px) {
   html {
     font-size: 16px;
