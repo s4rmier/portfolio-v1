@@ -289,7 +289,7 @@ export default function Home() {
             </figure>
             <div className="other-posts flex-col">
               <figure className="flex-row">
-                <img src="/ux.webp" alt="" />
+                <img className="other-blog-img30" src="/ux.webp" alt="" />
                 <figcaption>
                   <Link>
                     <h3>
@@ -300,7 +300,7 @@ export default function Home() {
                 </figcaption>
               </figure>
               <figure className="flex-row">
-                <img src="/mobile.webp" alt="" />
+                <img className="other-blog-img30" src="/mobile.webp" alt="" />
                 <figcaption>
                   <Link>
                     <h3>
@@ -311,7 +311,11 @@ export default function Home() {
                 </figcaption>
               </figure>
               <figure className="flex-row">
-                <img src="/serverless.avif" alt="" />
+                <img
+                  className="other-blog-img30"
+                  src="/serverless.avif"
+                  alt=""
+                />
                 <figcaption>
                   <Link>
                     <h3>
@@ -322,7 +326,7 @@ export default function Home() {
                 </figcaption>
               </figure>
               <figure className="flex-row">
-                <img src="/seo.jpeg" alt="" />
+                <img className="other-blog-img30" src="/seo.jpeg" alt="" />
                 <figcaption>
                   <Link>
                     <h3>
