@@ -100,7 +100,7 @@ button.button {
   margin: 0rem 0.25rem;
   border-radius: 5px;
   padding: 0.35rem 0.85rem;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-family: "Bebas Neue";
   text-wrap: nowrap;
   background-color: var(--eggshell);
@@ -127,6 +127,6 @@ button.button i {
 }
 @media screen and (max-width: 640px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=base.css.map */

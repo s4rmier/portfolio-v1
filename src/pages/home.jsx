@@ -67,7 +67,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h2>My Tech Arsenal</h2>
+          <h2 className="stack-title">My Tech Arsenal</h2>
           <div className="stack-container flex-row align justify">
             <Skill img={"/html.webp"} label={"HTML"} />
             <Skill img={"/css.webp"} label={"CSS"} />
@@ -165,6 +165,74 @@ export default function Home() {
                   <li>Javascript</li>
                   <li>SCSS</li>
                   <li>Mongo DB</li>
+                </ul>
+                <div className="button-set flex-row">
+                  <button className="button">
+                    <a
+                      href="https://github.com/s4rmier/fsdi-107-110-bike-shop"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>Github Repo
+                    </a>
+                  </button>
+                  <button className="button">
+                    <a
+                      href="https://fsdi-107-110-bike-shop.netlify.app"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-globe"></i>Live Demo
+                    </a>
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+            <figure className="project-item flex-row">
+              <img src="/petzzarria.png" alt="" />
+              <figcaption>
+                <h3>Petzzarria</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                  iure. Assumenda reiciendis laudantium sint laboriosam tempora.
+                  Deserunt corporis quis vel.
+                </p>
+                <ul className="skillset flex-row">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>Javascript</li>
+                </ul>
+                <div className="button-set flex-row">
+                  <button className="button">
+                    <a
+                      href="https://github.com/s4rmier/fsdi104-pet-salon"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>Github Repo
+                    </a>
+                  </button>
+                  <button className="button">
+                    <a
+                      href="https://fsdi104-pet-salon.netlify.app"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-globe"></i>Live Demo
+                    </a>
+                  </button>
+                </div>
+              </figcaption>
+            </figure>
+            <figure className="project-item flex-row">
+              <img src="/urbanbikes.png" alt="" />
+              <figcaption>
+                <h3>Romnick.dev</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                  iure. Assumenda reiciendis laudantium sint laboriosam tempora.
+                  Deserunt corporis quis vel.
+                </p>
+                <ul className="skillset flex-row">
+                  <li>React</li>
+                  <li>Javascript</li>
+                  <li>SCSS</li>
                 </ul>
                 <div className="button-set flex-row">
                   <button className="button">
