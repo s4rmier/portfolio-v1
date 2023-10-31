@@ -93,9 +93,9 @@ export default function Home() {
                 <strong>Jul 06 - Apr 08</strong>
               </p>
               <p className="description">
-                This is an example of a description. This is an example of a
-                description. This is an example of a description. This is an
-                example of a description.
+                This course focuses in computer programming and basic computer
+                fundamentals. We've explored the early computer programming
+                languages such as C#, C++, Visual Basic and Java.
               </p>
               <ul className="skillset flex-row">
                 <li>Computer Programming</li>
@@ -111,9 +111,11 @@ export default function Home() {
                 <strong>Nov 21 - Feb 23</strong>
               </p>
               <p className="description">
-                This is an example of a description. This is an example of a
-                description. This is an example of a description. This is an
-                example of a description.
+                Platt College is a design school. The degree program heavily
+                emphasizes design principles such as CRAP (Contrast, Repetition,
+                Alignment, and Proximity). My intention was to finish the BA in
+                Media Arts (Web Design Major) but unfortunately, the school
+                closed after I obtained my Associates Degree.
               </p>
               <ul className="skillset flex-row">
                 <li>Digital Production</li>
@@ -130,9 +132,11 @@ export default function Home() {
                 <strong>Jun 23 - Dec 23</strong>
               </p>
               <p className="description">
-                This is an example of a description. This is an example of a
-                description. This is an example of a description. This is an
-                example of a description.
+                This program is similar to what people refer to as a "Coding
+                Bootcamp". Their immersive full stack development program
+                encompasses many phases of software life cycle and development
+                covering the front-end, "middle-end", and back-end of a website
+                or a full pledged web application.
               </p>
               <ul className="skillset flex-row">
                 <li>HTML</li>
